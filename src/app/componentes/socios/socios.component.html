@@ -1,6 +1,6 @@
 <body>
   <p>Socios</p>
   Ingrese código: <input type="text" id="titulo"  [(ngModel)]="codigo">
-  <p>Código: {{codigo}}</p>
-  <app-boton></app-boton>
+  <p>Código: {{sociosArray[sociosArray.length-1]}}</p>
+  <app-boton (click)="addToDataArray()"></app-boton>
 </body>

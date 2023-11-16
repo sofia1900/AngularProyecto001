@@ -1,7 +1,7 @@
 <body>
   <p>Libros</p>
   Ingrese titulo: <input type="text" id="titulo"  [(ngModel)]="titulo">
-  <p>El nombre completo: {{titulo}}</p>
+  <p>El nombre completo: {{titulosArray[titulosArray.length-1]}}</p>
   <app-boton (click)="addToDataArray()"></app-boton>
 </body>
 

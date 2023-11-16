@@ -13,4 +13,10 @@ import {BotonComponent} from "../boton/boton.component";
 export class SociosComponent {
   codigo = "2000";
 
+  sociosArray: string[] = [];
+
+  addToDataArray(){
+    this.sociosArray.push(this.codigo)
+  }
+
 }

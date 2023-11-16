@@ -13,10 +13,10 @@ import {BotonComponent} from "../boton/boton.component";
 export class LibrosComponent {
   titulo =  "El Quijote";
 
-  dataArray: string[] = [];
+  titulosArray: string[] = [];
 
   addToDataArray(){
-      this.dataArray.push(this.titulo)
+      this.titulosArray.push(this.titulo)
   }
 
 }
