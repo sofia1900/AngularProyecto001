@@ -11,9 +11,13 @@ import {BotonComponent} from "../boton/boton.component";
   styleUrl: './libros.component.css'
 })
 export class LibrosComponent {
+
+  tituloBoton = "Añadir libro";
+
   titulo =  "El Quijote";
 
   titulosArray: string[] = [];
+
 
   addToDataArray(){
       this.titulosArray.push(this.titulo)

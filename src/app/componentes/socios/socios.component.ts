@@ -11,6 +11,9 @@ import {BotonComponent} from "../boton/boton.component";
   styleUrl: './socios.component.css'
 })
 export class SociosComponent {
+
+  tituloBoton = "Añadir codigo";
+
   codigo = "2000";
 
   sociosArray: string[] = [];
