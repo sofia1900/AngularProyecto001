@@ -2,6 +2,16 @@
   <p>Libros</p>
   Ingrese titulo: <input type="text" id="titulo"  [(ngModel)]="titulo">
   <p>El nombre completo: {{titulosArray[titulosArray.length-1]}}</p>
+
+  <table border="1">
+    <tr>
+      <td>TITULOS</td>
+    </tr>
+    <tr *ngFor="let titulo of titulosArray">
+      <td >{{titulo}}</td>
+    </tr>
+  </table>
+  <br>
   <app-boton (click)="addToDataArray()"></app-boton>
 </body>
 

@@ -2,5 +2,14 @@
   <p>Socios</p>
   Ingrese código: <input type="text" id="titulo"  [(ngModel)]="codigo">
   <p>Código: {{sociosArray[sociosArray.length-1]}}</p>
+  <table border="1">
+    <tr>
+      <td>CÓDIGOS</td>
+    </tr>
+    <tr *ngFor="let codigo of sociosArray">
+      <td >{{codigo}}</td>
+    </tr>
+  </table>
+  <br>
   <app-boton (click)="addToDataArray()"></app-boton>
 </body>
